@@ -30,7 +30,7 @@
         </header>
     </main>
 
-    <script>
+    <script> 
         // Your JavaScript code goes here
         $(document).ready(function() {
             // jQuery code goes here
