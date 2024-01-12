@@ -15,13 +15,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="assets/site.webmanifest">
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+
 
 </head>
 <body>
-    <main class="body_wrap">
+    <main id="main" class="body_wrap">
+        <button class="slide-nav-toggle">open</button>
+        <nav class="slide-nav">
+            <ul>
+                <li><a href="">mail</a></li>
+                <li><a href="">phone</a></li>
+            </ul>
+        </nav>
+        
         <header class="header_wrap">
             <h1>
                 <img src="assets/sunday-works.svg" alt="Sunday Works">
@@ -31,9 +37,11 @@
     </main>
 
     <script> 
-        // Your JavaScript code goes here
-        $(document).ready(function() {
-            // jQuery code goes here
+        // just plain javascript!!!
+        const button = document.querySelector('.slide-nav-toggle');
+        const pane = document.querySelector('.slide-nav');
+        button.addEventListener('click', () => {
+            pane.classList.toggle('open');
         });
     </script>
 </body>
