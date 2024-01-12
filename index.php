@@ -20,13 +20,7 @@
 </head>
 <body>
     <main id="main" class="body_wrap">
-        <button class="slide-nav-toggle">open</button>
-        <nav class="slide-nav">
-            <ul>
-                <li><a href="">mail</a></li>
-                <li><a href="">phone</a></li>
-            </ul>
-        </nav>
+
         
         <header class="header_wrap">
             <h1>
