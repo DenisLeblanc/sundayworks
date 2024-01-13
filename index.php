@@ -20,13 +20,7 @@
 </head>
 <body>
     <main id="main" class="body_wrap">
-        <a class="slide-nav-toggle"><img src="assets/icon-menu-burger.4.svg" alt="Open Menu"></a>
-        <nav class="slide-nav">
-            <ul>
-                <li><a href="">mail</a></li>
-                <li><a href="">phone</a></li>
-            </ul>
-        </nav>
+        
         
         <header class="header_wrap">
             <h1>
