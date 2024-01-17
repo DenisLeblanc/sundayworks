@@ -29,12 +29,10 @@
 .hide {
     display: none;
 }
-.clearfix {
-    &::after {
-      display: block;
-      clear: both;
-      content: "";
-    }
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
 }
 
 p {
@@ -78,7 +76,7 @@ body {
         border: var(--med_space) solid var(--white);
     }
 }
-body/*:not(.home)*/ {
+body:not(.home) {
     .header_wrap {
         display: block;
         width: 100%;
@@ -102,7 +100,7 @@ body/*:not(.home)*/ {
         }
     }
 }
-/*body.home {
+body.home {
     .header_wrap {
         h1 {
             z-index: 1000;
@@ -111,9 +109,14 @@ body/*:not(.home)*/ {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
         }
     }
-}*/
+}
 
 .main_wrap {
     width: 100%; 
