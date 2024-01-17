@@ -47,10 +47,9 @@ h2 {
     font-family: var(--primary-font);
     font-weight: 400;
     font-style: italic;
-
-    &:first-letter {
-        font-feature-settings: "swsh";
-    }
+}
+h2:first-letter {
+    font-feature-settings: "swsh";
 }
 
 ul { 
@@ -76,46 +75,39 @@ body {
         border: var(--med_space) solid var(--white);
     }
 }
-body:not(.home) {
-    .header_wrap {
-        display: block;
-        width: 100%;
-        padding: var(--xlrg_space) var(--med_space);
+body:not(.home) .header_wrap {
+    display: block;
+    width: 100%;
+    padding: var(--xlrg_space) var(--med_space);
 
-        @media screen and (min-width: 1024px) {
-            height: 100%;
-            width: 50%;
-            float: left;
-            padding: 0;
-        }
-
-        h1 {
-            width: 75%;
-            margin: 0 auto;
-
-            @media screen and (min-width: 1024px) {
-                width: 85%;
-                margin-top: var(--xlrg_space);
-            }
-        }
+    @media screen and (min-width: 1024px) {
+        height: 100%;
+        width: 50%;
+        float: left;
+        padding: 0;
     }
 }
-body.home {
-    .header_wrap {
-        h1 {
-            z-index: 1000;
-            width: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            a {
-                display: block;
-                width: 100%;
-                height: 100%;
-            }
-        }
+body:not(.home) .header_wrap h1 {
+    width: 75%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1024px) {
+        width: 85%;
+        margin-top: var(--xlrg_space);
     }
+}
+body.home .header_wrap h1 {
+    z-index: 1000;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+body.home .header_wrap h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .main_wrap {
@@ -136,19 +128,19 @@ body.home {
     @media screen and (min-width: 1024px) {
         padding: 0 var(--med_space);
     }
+}
 
-    .inner_section_row {
-       padding-bottom: 1.5rem;
-    }
+.section_row .inner_section_row {
+    padding-bottom: 1.5rem;
+}
 
-    .col_1 {
-        width: 100%;
-    }
-    .col_2 {
-        width: 50%;
-        min-width: 250px;
-        padding-right: var(--sml_space);
-    }
+.section_row .inner_section_row .col_1 {
+    width: 100%;
+}
+.section_row .inner_section_row .col_2 {
+    width: 50%;
+    min-width: 250px;
+    padding-right: var(--sml_space);
 }
 
 .slide-nav-toggle {
@@ -168,35 +160,29 @@ body.home {
 
 .slide-nav-toggle {
     transition: var(--transition);
-    img {
-        width: 100%;
-        height: 100%;
-        &.close {
-            display: none;
-        }
-    }
-    &.active {
-        img.open {
-            display: none;
-        }
-        img.close {
-            display: inline-block;
-        }
-    }
+}
+.slide-nav-toggle img {
+    width: 100%;
+    height: 100%;
+}
+.slide-nav-toggle img.close {
+    display: none;
+}
+.slide-nav-toggle.active img.open {
+    display: none;
+}
+.slide-nav-toggle.active img.close {
+    display: inline-block;
 }
 
-.menu-active {
-    .slide-nav-toggle {
-        transform: translate3d(calc(var(--slide-nav-width) - var(--xsml_space)), 0, 0);
-        
-        @media screen and (min-width: 768px) {
-            transform: translate3d(calc(var(--slide-nav-width) - var(--sml_space)), 0, 0);
-        }
-        @media screen and (min-width: 1024px) {
-            transform: translate3d(calc(var(--slide-nav-width) - var(--med_space)), 0, 0);
-        }
-           
+.menu-active .slide-nav-toggle {
+    transform: translate3d(calc(var(--slide-nav-width) - var(--xsml_space)), 0, 0);
+    @media screen and (min-width: 768px) {
+        transform: translate3d(calc(var(--slide-nav-width) - var(--sml_space)), 0, 0);
     }
+    @media screen and (min-width: 1024px) {
+        transform: translate3d(calc(var(--slide-nav-width) - var(--med_space)), 0, 0);
+    }   
 }
 
 .slide-nav {
@@ -213,7 +199,6 @@ body.home {
     border: 10px solid var(--white);
     border-right: none;
     z-index: 1001;
-
     @media screen and (min-width: 768px) {
         border: 15px solid var(--white);
         border-right: none;
@@ -223,33 +208,29 @@ body.home {
         border-right: none;
     }
 }
-.slide-nav {
-    .item {
+.slide-nav .item {
         display: block;
         color: var(--black);
         padding: 15px;
         transition: var(--transition);
         text-transform: uppercase;
         text-decoration: none;
-    
-        &:hover {
-            background-color: var(--black);
-            color: var(--white);
-        }
-    }
 }
-.menu-active {
-    .slide-nav {
-        transform: translate3d(0,0,0);
-    }
+.slide-nav .item:hover {
+    background-color: var(--black);
+    color: var(--white);
 }
+
+.menu-active .slide-nav {
+    transform: translate3d(0,0,0);
+}
+
 
 .content_wrap {
     display: block;
     margin: 0;
     color: var(--white);
     text-align: left;
-    
     @media screen and (min-width: 1024px) {
         float: right;
         width: 50%;
@@ -288,7 +269,8 @@ body.home {
     background-color: var(--white-2);
 }
 
-select.form_control[size], select.form_control[multiple] {
+select.form_control[size], 
+select.form_control[multiple] {
     height: auto;
 }
 
@@ -301,11 +283,10 @@ label {
     display: inline-block;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
-
-    required {
-        color: var(--highlight);
-        padding: 0.25rem;
-    }
+}
+label required {
+    color: var(--highlight);
+    padding: 0.25rem;
 }
 
 .btn {
@@ -339,7 +320,8 @@ label {
     text-decoration: none;
 }
 
-.btn:focus, .btn.focus {
+.btn:focus, 
+.btn.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
@@ -354,14 +336,16 @@ label {
     background-color: var(--highlight-2);
 }
 
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary:focus, 
+.btn-primary.focus {
     color: #fff;
     background-color: #0069d9;
     border-color: #0062cc;
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-.btn-lg, .btn-group-lg>.btn {
+.btn-lg, 
+.btn-group-lg>.btn {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -376,6 +360,8 @@ label {
     margin-top: 0.5rem;
 }
 
-input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+input[type="submit"].btn-block, 
+input[type="reset"].btn-block, 
+input[type="button"].btn-block {
     width: 100%;
 }
