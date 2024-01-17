@@ -42,7 +42,7 @@
     <header class="header_wrap">
         <h1>
             <a href="/" title="<?php echo $site_name; ?>">
-                <img src="assets/sunday-works.svg" srcset="assets/sunday-works.svg" alt="<?php echo $site_name; ?>" width="525" height="241" />
+                <img src="assets/sunday-works.svg" srcset="assets/sunday-works.svg" alt="<?php echo $site_name; ?>" />
                 <span class="visually-hidden"><?php echo $site_name; ?></span>
             </a>
         </h1>
