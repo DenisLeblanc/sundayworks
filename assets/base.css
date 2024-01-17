@@ -41,12 +41,10 @@ p {
 
 h2 {
     font-size: 2rem;
-    font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     font-weight: 400;
-    font-style: italic;
 }
 h2:first-letter {
     font-feature-settings: "swsh";

@@ -32,7 +32,7 @@
     <nav class="slide-nav">
         <ul>
             <li><a class="item" href="/">home</a></li>
-            <li><a class="item" href="details.php">details</a></li>
+            <li><a class="item" href="hello.php">hello</a></li>
             <li><a class="item" href="contact.php">connect</a></li>
         </ul>
     </nav>
