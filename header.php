@@ -1,7 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sunday Works</title>
+    <?php 
+        $site_name = 'Sunday Works';
+        $base_path = $_SERVER['HTTP_HOST'];
+        $site_path = $_SERVER['REQUEST_URI'];
+    ?>
+    
+    <title><?php echo $site_name; ?></title>
+    
     <meta charset="utf-8">
     <meta name="description" content="Shopify Theme Development">
     <meta name="keywords" content="shopify web design, web development, graphi design, ecommerce">
@@ -15,11 +22,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="assets/site.webmanifest">
-    <?php
-        $base_path = $_SERVER['HTTP_HOST'];
-        $site_path = $_SERVER['REQUEST_URI'];
 
-    ?>
 </head>
 <body class="<?php echo $page; ?>"> 
 <a class="slide-nav-toggle">
@@ -38,9 +41,9 @@
 
     <header class="header_wrap">
         <h1>
-            <a href="/">
-                <img src="assets/sunday-works.svg" alt="Sunday Works">
-                <span class="visually-hidden">Sunday Works</span>
+            <a href="/" title="<?php echo $site_name; ?>">
+                <img src="assets/sunday-works.svg" srcset="assets/sunday-works.svg" alt="<?php echo $site_name; ?>" width="525" height="241" />
+                <span class="visually-hidden"><?php echo $site_name; ?></span>
             </a>
         </h1>
     </header>
