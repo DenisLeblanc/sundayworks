@@ -78,7 +78,7 @@ body {
         border: var(--med_space) solid var(--white);
     }
 }
-body:not(.home) {
+body/*:not(.home)*/ {
     .header_wrap {
         display: block;
         width: 100%;
@@ -102,9 +102,10 @@ body:not(.home) {
         }
     }
 }
-body.home {
+/*body.home {
     .header_wrap {
         h1 {
+            z-index: 1000;
             width: 50%;
             position: absolute;
             top: 50%;
@@ -112,7 +113,7 @@ body.home {
             transform: translate(-50%, -50%);
         }
     }
-}
+}*/
 
 .main_wrap {
     width: 100%; 
