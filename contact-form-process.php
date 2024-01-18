@@ -56,8 +56,8 @@ if (isset($_POST['Email'])) {
         die();
 	} else {
 
-        $email_to = "mail@denisleblanc.com";
-        $email_subject = "New form submission from " . clean_string($name);
+        $email_to = "hello@sundayworks.co";
+        $email_subject = "Message from " . clean_string($name);
 
 		$email_message = clean_string($message) . "\n\n\n";
         $email_message .= clean_string($name) . "\n";
