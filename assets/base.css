@@ -410,7 +410,7 @@ footer.site_footer {
 footer.site_footer .gradient {
     width: 100%;
     margin: 0 auto;
-    padding: var(--med_space);
+    padding: var(--xlrg_space);
     background-image: linear-gradient(rgba(var(--black),0), rgba(var(--black),1));
 }
 footer.site_footer p {
