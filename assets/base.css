@@ -126,7 +126,7 @@ body:not(.home).main_wrap .header_wrap h1 {
     left: 0;
     right: 0;
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: var(--xlrg_space);
     border: var(--xsml_space) solid rgba(var(--white),1);
     border-bottom: none;
     @media screen and (min-width: 768px) {
@@ -141,7 +141,7 @@ body:not(.home).main_wrap .header_wrap h1 {
 .top_border .gradient {
     width: 100%;
     margin: 0 auto;
-    padding: 30px;
+    padding: var(--xlrg_space);
     background-image: linear-gradient(rgba(var(--black),1), rgba(var(--black),0));
 }
 .section_row {
