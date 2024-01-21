@@ -394,7 +394,8 @@ footer.site_footer {
     bottom: 0;
     left: 0;
     right: 0;
-    color: rgba(var(--white),1);
+    color: rgba(var(--white),0.75);
+    letter-spacing: 0.03rem;
     padding-top: 1rem;
     border: var(--xsml_space) solid rgba(var(--white),1);
     border-top: none;
