@@ -25,10 +25,10 @@
 
 </head>
 <body class="<?php echo $page; ?>"> 
-<a class="slide-nav-toggle">
-            <img class="open" src="assets/icon-menu-burger.4.svg" alt="Open Menu">
-            <img class="close" src="assets/icon-delete-disabled.svg" alt="Close Menu">
-        </a>
+    <a class="slide-nav-toggle">
+        <img class="open" src="assets/icon-menu-burger.4.svg" alt="Open Menu">
+        <img class="close" src="assets/icon-delete-disabled.svg" alt="Close Menu">
+    </a>
     <nav class="slide-nav">
         <ul>
             <li><a class="item" href="/">home</a></li>
@@ -39,11 +39,15 @@
 
     <main id="main" class="main_wrap">
 
-    <header class="header_wrap">
-        <h1>
-            <a href="/" title="<?php echo $site_name; ?>">
-                <img src="assets/sunday-works.svg" srcset="assets/sunday-works.svg" alt="<?php echo $site_name; ?>">
-            </a>
-        </h1>
-    </header>
+    <div class="top_border">
+        <div class="gradient"></div>
+    </div>
+
+        <header class="header_wrap">
+            <h1>
+                <a href="/" title="<?php echo $site_name; ?>">
+                    <img src="assets/sunday-works.svg" srcset="assets/sunday-works.svg" alt="<?php echo $site_name; ?>" width="300" height="138"> 
+                </a>
+            </h1>
+        </header>
         

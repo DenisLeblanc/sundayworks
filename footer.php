@@ -1,3 +1,10 @@
+        <footer class="site_footer">
+            <div class="gradient"></div>
+            <div class="copyright_wrap">
+                <p>&copy; <?php echo date('Y'); ?> <?php echo $site_name; ?>. All rights reserved.</p>
+            </div>
+        </footer>
+    
     </main>
 
     <script> 
@@ -13,6 +20,18 @@
             });
         }
         slidingMenu();
+
+        window.addEventListener('load', function() {
+            var windowHeight = window.innerHeight;
+            var mainHeight = document.getElementById('main').offsetHeight;
+
+            if (windowHeight > mainHeight) {
+                var siteFooter = document.querySelector('.site_footer');
+                siteFooter.style.position = 'fixed';
+                // siteFooter.style.bottom = 0;
+            }
+        });
+
     </script>
 
 </body>

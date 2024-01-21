@@ -50,7 +50,7 @@
         </div>
 
         <div class="form_group inner_section_row">
-            <button type="submit" id="button" class="btn btn-primary btn-lg btn-block">Fire it up!</button>
+            <button type="submit" id="button" class="btn btn-primary btn-lg btn-block">High Five!</button>
         </div>
 
     </form>

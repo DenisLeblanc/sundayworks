@@ -9,7 +9,7 @@
     
     <content class="inner_section_row">
         
-        <h2>Hello,</h2>
+        <h2>Hello</h2>
 
         <p>Sunday Works is owned and operated by a manic entrepreneur with several decades of experience launching personal projects, from skateboard companies to screen print shops, and pottery stores to coffee roasteries.</p>
 
