@@ -66,6 +66,8 @@ body {
     min-height: 100%;
     box-sizing: border-box;
     border: var(--xsml_space) solid rgba(var(--white),1);
+    border-top: none;
+    border-bottom: none;
     @media screen and (min-width: 768px) {
         border: var(--sml_space) solid rgba(var(--white),1);
     }
