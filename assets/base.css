@@ -186,17 +186,12 @@ body:not(.home).main_wrap .header_wrap h1 {
     width: var(--lrg_space);
     height: var(--lrg_space);
     background: none;
-    margin-left: .25rem;
+    margin-left: var(--xsml_space);
     margin-top: var(--xsml_space);
     z-index: 1000;
     cursor: pointer;
     position: absolute;
-    @media screen and (min-width: 768px) {
-        margin-top: var(--xsml_space);
-    }
-    @media screen and (min-width: 1024px) {
-        margin-top: var(--xsml_space);
-    }
+
 }
 
 .slide-nav-toggle {
