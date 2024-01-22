@@ -13,7 +13,7 @@
     <meta name="description" content="Shopify Theme Development">
     <meta name="keywords" content="shopify web design, web development, graphi design, ecommerce">
     <meta name="author" content="Denis Leblanc">
-    <meta name="viewport" content="width=device-width; height=device-height;initial-scale=1.0; maximum-scale=1.0;">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
     
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/base.css">
