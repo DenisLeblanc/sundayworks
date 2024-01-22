@@ -1,9 +1,10 @@
 <?php 
     $page = "contact";
     include_once("header.php");
+    if ($_GET['status'] == 'success') {
+        $success = "Thank you for contacting us. We will be in touch with you very soon.";
+    }
 ?>
-
-
 
 <div class="content_wrap section_row">
 
@@ -11,13 +12,8 @@
     
     <content class="inner_section_row">
         <p>With over 15 years of working on all sorts of projects, big and small, with talent of all sorts, Sunday Works is a great place to start. We'd happily sit down with you and chat about how we can help.</p>
+        <p class="success"><?php echo $success; ?></p>
     </content>
-
-    <?php 
-        if ($_GET['status'] == 'success') {
-            echo '<p class="fcf-success">Thank you for contacting us. We will be in touch with you very soon.</p>';
-        } 
-    ?>
     
     <form id="contact_form" class="contact_form inner_section_row" method="post" action="contact-form-process.php">
         

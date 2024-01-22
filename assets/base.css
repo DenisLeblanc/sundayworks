@@ -280,6 +280,11 @@ body:not(.home).main_wrap .header_wrap h1 {
     }
 }
 
+.success {
+    color: rgba(var(--highlight),1);
+    font-weight: 700;
+}
+
 .input_group {
     position: relative;
     display: -ms-flexbox;
@@ -289,6 +294,11 @@ body:not(.home).main_wrap .header_wrap h1 {
     -ms-flex-align: stretch;
     align-items: stretch;
     width: 100%;
+}
+input,
+input:focus,
+input:active {
+    background-color: rgba(var(--white),1);
 }
 
 .form_control {
@@ -334,7 +344,7 @@ label required {
 .btn {
     display: inline-block;
     font-weight: 400;
-    color: rgba(var(--white),1));
+    color: rgba(var(--white),1);
     text-align: center;
     text-transform: uppercase;
     vertical-align: middle;
