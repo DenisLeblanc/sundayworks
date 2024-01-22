@@ -59,6 +59,7 @@ html, body {
 body {
     margin: 0;
     font-family: var(--secondary-font);
+    -webkit-text-size-adjust: 100%;
     background: rgba(var(--black),1);
     color: rgba(var(--white),1);
     width: 100%;
