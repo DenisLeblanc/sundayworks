@@ -22,15 +22,14 @@
         slidingMenu();
 
         window.addEventListener('load', function() {
-            var windowHeight = window.innerHeight;
-            var mainHeight = document.getElementById('main').offsetHeight;
+            
 
-            if (windowHeight > mainHeight) {
-                var siteFooter = document.querySelector('.site_footer');
-                siteFooter.style.position = 'fixed';
-                // siteFooter.style.bottom = 0;
-            }
+            setTimeout(function(){
+                // This hides the address bar:
+                window.scrollTo(0, 1);
+            }, 0);
         });
+
 
     </script>
 
