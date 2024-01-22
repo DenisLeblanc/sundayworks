@@ -189,9 +189,16 @@ body:not(.home).main_wrap .header_wrap h1 {
     height: var(--lrg_space);
     background: none;
     margin-left: .25rem;
+    margin-top: var(--xsml_space);
     z-index: 1000;
     cursor: pointer;
     position: absolute;
+    @media screen and (min-width: 768px) {
+        margin-top: var(--sml_space);
+    }
+    @media screen and (min-width: 1024px) {
+        margin-top: var(--med_space);
+    }
 }
 
 .slide-nav-toggle {
