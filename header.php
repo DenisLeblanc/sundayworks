@@ -22,6 +22,33 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="assets/site.webmanifest">
+    
+    <?php $dark = array
+        (
+            "grey" => "96, 114, 116",
+            "black" => "10,7,6",
+            "midnight" => "24, 29, 49",
+            "orange" => "236, 143, 94",
+            "green" => "159, 187, 115",
+            "green2" => "137, 129, 33",
+            "aqua" => "33, 156, 144",
+            "red" => "216, 63, 49",
+            "blue" => "38, 87, 124",
+            "blue2" => "38, 87, 124",
+            "purple" => "77, 69, 93",
+            "pink" => "233, 100, 121",
+            "yellow" => "231, 177, 10",
+        );
+    ?>
+    <style>
+        body { background: rgba(<?php echo $dark[0]; ?>,1); }
+        .top_border .gradient { background-image: linear-gradient(rgba(<?php echo $dark[0]; ?>,1), rgba(<?php echo $dark[0]; ?>,0)); }
+        .slide-nav .item { color: rgba(<?php echo $dark[0]; ?>,1); }
+        .slide-nav .item:hover { background-color: rgba(<?php echo $dark[0]; ?>,1); }
+        .form_control { color: rgba(<?php echo $dark[0]; ?>,0.6); }
+        footer.site_footer .gradient { background-image: linear-gradient(rgba(<?php echo $dark[0]; ?>,0), rgba(<?php echo $dark[0]; ?>,1)); }
+        .copyright_wrap { background: rgba(<?php echo $dark[0]; ?>, 1); }
+    </style>
 
 </head>
 <body class="<?php echo $page; ?>"> 
