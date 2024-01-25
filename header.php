@@ -28,7 +28,7 @@
             "grey" => "96, 114, 116",
             "black" => "10,7,6",
             "midnight" => "24, 29, 49",
-            "orange" => "236, 143, 94",
+            "orange" => "236, 143, 94", 
             "green" => "159, 187, 115",
             "green2" => "137, 129, 33",
             "aqua" => "33, 156, 144",
@@ -39,7 +39,9 @@
             "pink" => "233, 100, 121",
             "yellow" => "231, 177, 10",
         );
+        shuffle($dark);
     ?>
+
     <style>
         body { background: rgba(<?php echo $dark[0]; ?>,1); }
         .top_border .gradient { background-image: linear-gradient(rgba(<?php echo $dark[0]; ?>,1), rgba(<?php echo $dark[0]; ?>,0)); }
