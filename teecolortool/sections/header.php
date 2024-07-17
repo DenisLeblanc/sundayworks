@@ -43,8 +43,56 @@ $bg_colors = [
     '17171b' => 'Graphite',
     '111115' => 'Black'
 ];
+$bg_colors = [
+   // Fire and Sun
+   'Fire Red' => '#E05341',
+   'Sunset Orange' => '#E8993A',
+   'Sunflower Yellow' => '#DFB64C',
+   'Golden Glow' => '#DFDB9E',
+   'Emerald Green' => '#87B79F',
+   'Forest Green' => '#468D7F',
+   // Autumn Leaves
+   'Burnt Sienna' => '#D25C3E',
+   'Sunrise Gold' => '#E6A408',
+   'Pumpkin Spice' => '#F9EFBC',
+   'Moss Green' => '#8EC4B7',
+   'Teal Blue' => '#349199',
+   'Deep Teal' => '#336878',
+   // Earth Tones
+   'Sandstone' => '#E5DCB1',
+   'Cinnamon' => '#F8C143',
+   'Tangerine' => '#Fe7E1B',
+   'Brick Red' => '#EB4E19',
+   'Rust Red' => '#D52623',
+   'Plum Purple' => '#762A36',
+   'Midnight Blue' => '#373342',
+   'Navy Night' => '#06324D',
+   // Harvest Fields
+   'Harvest Red' => '#BE6344',
+   'Amber Orange' => '#C88737',
+   'Sunshine Yellow' => '#D0C665',
+   'Olive Green' => '#89AB88',
+   // Summer Bliss
+   'Blazing Red' => '#E12F3F',
+   'Sunbeam Orange' => '#F89A26',
+   'Honeydew Orange' => '#F8C64B',
+   'Breezy Green' => '#C7D2A7',
+   'Minty Fresh' => '#71B7AC',
+   'Azure Teal' => '#1F9B93',
+   'Deep Aqua' => '#117E78',
+   'Evergreen' => '#2B6161',
+   // Nature's Palette
+   'Cherry Red' => '#8D080B',
+   'Scarlet Red' => '#AD1C15',
+   'Terra Cotta' => '#D56519',
+   'Goldenrod' => '#CF9C29',
+   'Oak Brown' => '#CDBD9B',
+   'Sapphire Teal' => '#549E9D',
+   'Shadow Teal' => '#27565E',
+   'Midnight Slate' => '#21343B',
+];
 
-$gr_colors = [
+$colors = [
     'fedcac' => 'Apricot Cream',
     'd0dfcc' => 'Pale Sage',
     'ff6b81' => 'Blush Pink',

@@ -11,10 +11,10 @@
     <h2><span class="swash">L</span>et's <span class="swash">C</span>onnect...</h2>
     
     <content class="inner_section_row">
-        <p>With over 15 years of working on all sorts of projects, big and small, with talent of all sorts, Sunday Works is a great place to start. We'd happily sit down with you and chat about how we can help.</p>
+        <p>With over 15 years of working on all sorts of projects, big and small, with talent of all sorts, Sunday Works is a great place to start. We'd happily sit down with you and chat about how we can help. Drop us a line at hello@sundayworks.co</p>
         <p class="success"><?php echo $success; ?></p>
     </content>
-    
+    <!--
     <form id="contact_form" class="contact_form inner_section_row" method="post" action="contact-form-process.php">
         
         <div class="form_group inner_section_row">
@@ -50,7 +50,7 @@
         </div>
 
     </form>
-
+    -->
 
 </div>
 
